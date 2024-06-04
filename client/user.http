@@ -1,0 +1,30 @@
+### Create a user
+POST {{host}}/users
+Content-Type: application/json
+
+{
+  "firstName": "Yuichi",
+  "lastName": "Kawamata",
+  "email": "yi.kawamata@namutech.co.jp",
+  "password": "password"
+}
+
+### Get all users
+GET {{host}}/users
+
+### Get a user by ID
+GET {{host}}/users/3
+
+### Update a user by ID
+PATCH {{host}}/users/4
+Content-Type: application/json
+
+{
+  "firstName": "Yuichi",
+  "lastName": "Kawamata",
+  "email": "yi.kawamata@namutech.co.jp",
+  "password": "new-password"
+}
+
+### Delete a user
+DELETE {{host}}/users/4
